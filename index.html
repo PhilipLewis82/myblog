@@ -1,40 +1,83 @@
-l<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Blog</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    nav {
+      background: #444;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2rem;
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <header id="home">
     <h1>Un blog sencillo...</h1>
-    <p>Trabajo para la Universidad internacional de la Rioja</p>
+    <p>Trabajo para la Universidad Internacional de La Rioja</p>
   </header>
 
-  <main>
-    <article>
-      <h2>Este es la primera entrada!</h2>
-       <img 
-    src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-    alt="Person at a desk with a computer" 
-    style="width:100%; max-width:600px; border-radius:8px; margin: 1rem 0;"
-  />
-      <p>Estuve jugando con GitHub y logre realizar la primera entrada de mi blog, logrando traer una imagen publica</p>
-    </article>
+  <!-- Menú de navegación -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#entrada1">Entrada 1</a>
+    <a href="#entrada2">Entrada 2</a>
+    <a href="#entrada3">Entrada 3</a>
+  </nav>
 
-    <article>
+  <main>
+    <!-- Entrada 1 -->
+    <section id="entrada1">
       <article>
-  <h2>Otra entrada</h2>
-  <iframe 
-    src="https://www.youtube.com/embed/P5hmH3NOul4" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen
-    style="width:50%; height:300px; border-radius:8px; display:block; margin:1rem 0;">
-  </iframe>
-  <p>Esta es otra entrada, después de un rato logré traer un video de Youtube, que no tenga copyright.</p>
-</article>
+        <h2>Este es la primera entrada!</h2>
+        <img 
+          src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+          alt="Person at a desk with a computer" 
+          style="width:100%; max-width:600px; border-radius:8px; margin: 1rem 0;"
+        />
+        <p>Estuve jugando con GitHub y logré realizar la primera entrada de mi blog, logrando traer una imagen pública.</p>
+      </article>
+    </section>
+
+    <!-- Entrada 2 -->
+    <section id="entrada2">
+      <article>
+        <h2>Otra entrada</h2>
+        <iframe 
+          src="https://www.youtube.com/embed/P5hmH3NOul4" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          style="width:50%; height:300px; border-radius:8px; display:block; margin:1rem 0;">
+        </iframe>
+        <p>Esta es otra entrada, después de un rato logré traer un video de YouTube, que no tenga copyright.</p>
+      </article>
+    </section>
+
+    <!-- Entrada 3 -->
+    <section id="entrada3">
+      <article>
+        <h2>Tercera entrada</h2>
+        <p>Esta entrada la reservo para futuras ideas, como incluir comentarios, enlaces o mostrar otros proyectos.</p>
+      </article>
+    </section>
   </main>
 
   <footer>
